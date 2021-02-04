@@ -8,6 +8,8 @@ services:
       - SA_PASSWORD=Pwd12345!
     ports:
       - "1433:1433"
+    volumes:
+      - C:\Users\ouyim\volumesformssql\dockercompose:/var/opt/mssql/data
 
   webapi:
     image: ${DOCKER_REGISTRY-}webapi
